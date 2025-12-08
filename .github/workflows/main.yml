@@ -1,0 +1,19 @@
+name: test-file
+
+on:
+  push:
+    branches: 
+      - main
+  workflow_dispatch:
+
+jobs:
+
+  my-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print working directory
+        run: pwd
+
+      - name: date
+        run: date
