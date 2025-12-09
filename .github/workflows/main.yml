@@ -15,5 +15,9 @@ jobs:
       - name: print working directory
         run: pwd
 
-      - name: date
-        run: date
+      - name: llist all files
+        run: ls -a
+      
+
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
